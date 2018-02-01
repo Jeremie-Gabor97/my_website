@@ -13,8 +13,14 @@
         <script src="scripts/MainController.js" type="application/javascript"></script>
     </head>
 
-    <body>
-        <video autoplay loop class = "hide_controls">
+    <body onload = "OnLoad()" ng-app="angularApp">
+        <ul class = "nav">
+            <li class="active"><a href = "#">Home</a></li>
+            <li><a href = "#interests">Interests</a></li>
+            <li><a href = "#contact">Contact</a></li>
+            <! # specifies internal location>
+        </ul>
+        <video autoplay loop class = "hide_controls"> <! hide_controls is a css class that hides the play button and other of video>
             <source src="images and videos/10 sec clip.mp4" type = "video/mp4">
         </video>
         The content of my website

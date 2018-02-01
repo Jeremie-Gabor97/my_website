@@ -1,3 +1,7 @@
 .hide_controls {
     pointer-events: none;
 }
+
+nav {
+    background-color: aliceblue
+}
