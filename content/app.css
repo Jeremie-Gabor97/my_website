@@ -2,6 +2,8 @@
     pointer-events: none;
 }
 
+/*useful website: http://css-snippets.com/simple-horizontal-navigation/  */
+
 body {
     margin: 0;
     padding: 0;
@@ -18,17 +20,18 @@ body {
 
 .nav li {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
-    border-bottom: 1px solid #888;
+    font-size: 1.4em;
+    line-height: 50px;
+    height: 50px;
+    width: 120px;
+    border-bottom: none;
 }
 
 .nav a{
     text-decoration: none;
     color: #fff;
     transition: .3s background-color; /*this adds a transition when hovering over*/
-    display: block;
+    display: block; /* when you over tab, it highlights block not just word*/
 }
 
 .nav a:hover {
@@ -42,7 +45,10 @@ body {
     cursor: default; /* when you pass over the active tab, it doesnt look like you can click on it*/
 }
 
-@media screen and (min-width: 600px) {
+/* This code below can be used if want to make it available for use on smaller devices like a phone.
+To do so, in .nav li go switch sizes to be more appropriate for a phone and then uncomment below
+Code below will take care of resizing things if screen is big enough*/
+/*@media screen and (min-width: 600px) {
     .nav li {
         width: 120px;
         border-bottom: none;
@@ -50,7 +56,8 @@ body {
         line-height: 50px;
         font-size: 1.4em;
     }
-}
+}*/
+
 
 .nav li{
     display: inline-block;
