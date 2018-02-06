@@ -62,3 +62,13 @@ Code below will take care of resizing things if screen is big enough*/
 .nav li{
     display: inline-block;
 }
+
+.intro-images {
+    float: left;
+}
+
+.intro-images img {
+    height: 370px;
+    width: 400px;
+    display: block;
+}

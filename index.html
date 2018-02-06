@@ -15,6 +15,7 @@
 
     <body onload = "OnLoad()" ng-app="angularApp">
         <div ng-controller="MainController">
+            <! for the navigation bar>
             <div class = "nav">
                 <ul>
                     <li class="active"><a href = "#">Home</a></li>
@@ -24,10 +25,29 @@
                     <! # specifies internal location>
                 </ul>
             </div>
+
+            <! code for the video>
             <div class="embed-responsive embed-responsive-16by9">
                 <video autoplay muted loop class = "hide_controls"> <! hide_controls is a css class that hides the play button and other of video>
                     <source class = "embed-responsive-item" src="images and videos/All over in 10 seconds.mp4" type = "video/mp4">
                 </video>
+            </div>
+
+            <div class="container-fluid">
+
+                    <div class="row">
+                        <article ng-repeat="intros in Introductions">
+                            <h2>{{ intros.Title }}</h2>
+                            <div class="col-md-3 intro-images">
+                                <img ng-src="{{ intros.Image }}" />
+                            </div>
+                            <div class="col-md-9 text-right">
+                                <div ng-bind-html="intros.Body"></div>
+                            </div>
+                        </article>
+                    </div>
+
+
             </div>
             The content of my website
         </div>
