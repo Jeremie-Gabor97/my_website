@@ -72,3 +72,32 @@ Code below will take care of resizing things if screen is big enough*/
     width: 400px;
     display: block;
 }
+
+
+.centered {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title {
+    color: black;
+    font-weight: bold;
+    font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.my_name_is {
+    font-size: 20px;
+}
+
+.name {
+    font-size: 45px;
+    border-bottom: 3px solid;
+}
+
+.occupations {
+    font-size: 25px;
+}
