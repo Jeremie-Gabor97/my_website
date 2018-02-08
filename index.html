@@ -28,15 +28,19 @@
 
             <! code for the video>
             <div class="embed-responsive embed-responsive-16by9">
-                <video autoplay muted loop class = "hide_controls"> <! hide_controls is a css class that hides the play button and other of video>
-                    <source class = "embed-responsive-item" src="images and videos/All over in 10 seconds.mp4" type = "video/mp4">
-                </video>
+                <div>
+                    <video autoplay muted loop class = "hide_controls"> <! hide_controls is a css class that hides the play button and other of video>
+                        <source class = "embed-responsive-item" src="images and videos/All over in 10 seconds.mp4" type = "video/mp4">
+                    </video>
+                </div>
                 <div class="centered">
                     <p class="my_name_is title">MY NAME IS</p>
                     <p class="name title">JEREMIE GABOR</p>
                     <p class="occupations title">CODER, STUDENT, ATHLETE</p>
+                    <img id="man" src="images and videos/arrow.png" align="middle" />
                 </div>
             </div>
+
 
             <div class="container-fluid">
 
@@ -44,9 +48,9 @@
                         <article ng-repeat="intros in Introductions">
                             <h2>{{ intros.Title }}</h2>
                             <div class="col-md-3 intro-images">
-                                <img ng-src="{{ intros.Image }}" />
+                                <img id="intro-images" ng-src="{{ intros.Image }}" />
                             </div>
-                            <div class="col-md-9 text-right">
+                            <div class="col-md-9 intro-texts">
                                 <div ng-bind-html="intros.Body"></div>
                             </div>
                         </article>

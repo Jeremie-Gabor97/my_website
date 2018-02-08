@@ -63,17 +63,6 @@ Code below will take care of resizing things if screen is big enough*/
     display: inline-block;
 }
 
-.intro-images {
-    float: left;
-}
-
-.intro-images img {
-    height: 370px;
-    width: 400px;
-    display: block;
-}
-
-
 .centered {
     position: absolute;
     text-align: center;
@@ -100,4 +89,40 @@ Code below will take care of resizing things if screen is big enough*/
 
 .occupations {
     font-size: 25px;
+}
+
+#man {
+    width: 100px;
+    display: block;
+    position: absolute;
+    left: 35%;
+    top: 100%;
+    opacity: 0;
+    animation: load_up 0.75s, 1s load_down 0.60s;
+}
+
+@keyframes load_up{
+    from{opacity:1;top:150%}
+    to{opacity:1;top:130%;}
+}
+
+@keyframes load_down{
+    from{opacity:1;top:130%}
+    to{opacity:1;top:200%;}
+}
+
+.intro-texts{
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.intro-images {
+    float: left;
+}
+
+.intro-images img {
+    height: 300px;
+    width: 300px;
+    display: block;
 }
