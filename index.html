@@ -37,20 +37,20 @@
                     <p class="my_name_is title">MY NAME IS</p>
                     <p class="name title">JEREMIE GABOR</p>
                     <p class="occupations title">CODER, STUDENT, ATHLETE</p>
-                    <img id="man" src="images and videos/arrow.png" align="middle" />
+                    <img id="man" src="images and videos/running.png" align="middle" />
                 </div>
             </div>
 
 
             <div class="container-fluid">
 
-                    <div class="row">
+                    <div class="row intro-section">
                         <article ng-repeat="intros in Introductions">
-                            <h2>{{ intros.Title }}</h2>
                             <div class="col-md-3 intro-images">
                                 <img id="intro-images" ng-src="{{ intros.Image }}" />
                             </div>
                             <div class="col-md-9 intro-texts">
+                                <h2>{{ intros.Title }}</h2>
                                 <div ng-bind-html="intros.Body"></div>
                             </div>
                         </article>

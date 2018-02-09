@@ -103,11 +103,11 @@ Code below will take care of resizing things if screen is big enough*/
 
 @keyframes load_up{
     from{opacity:1;top:150%}
-    to{opacity:1;top:130%;}
+    to{opacity:1;top:125%;}
 }
 
 @keyframes load_down{
-    from{opacity:1;top:130%}
+    from{opacity:1;top:125%}
     to{opacity:1;top:200%;}
 }
 
@@ -126,3 +126,21 @@ Code below will take care of resizing things if screen is big enough*/
     width: 300px;
     display: block;
 }
+
+.intro-section{
+    background-color: rgb(236, 235, 238);
+}
+
+@media screen and (min-width:480px) {
+    .intro-images {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+  }
+  
+  @media screen and (max-width:479px) {
+    .intro-images {
+      margin-right: -12px;
+      margin-left: -12px;
+    }
+  }
