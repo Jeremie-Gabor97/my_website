@@ -144,3 +144,11 @@ Code below will take care of resizing things if screen is big enough*/
       margin-left: -12px;
     }
   }
+
+  .interests {
+      background-color: white;
+  }
+
+  .subtitles {
+        text-align: center;
+  }

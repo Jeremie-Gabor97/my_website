@@ -45,20 +45,38 @@
             <div class="container-fluid">
 
                     <div class="row intro-section">
-                        <article ng-repeat="intros in Introductions">
+                        <article>
                             <div class="col-md-3 intro-images">
-                                <img id="intro-images" ng-src="{{ intros.Image }}" />
+                                <img id="intro-images" src="https://cdn.cnn.com/cnnnext/dam/assets/130821120202-human-to-hero-mark-poole-ultimate-00000408-horizontal-large-gallery.jpg" />
                             </div>
                             <div class="col-md-9 intro-texts">
-                                <h2>{{ intros.Title }}</h2>
-                                <div ng-bind-html="intros.Body"></div>
+                                <h1>About me</h1>
+                                <div>
+                                    <br
+                                    ><p>I am a third-year Computer Science and Statistics student at the University of Waterloo with a passion for coding and sports. My dream one day is to combine these two passions and work in the sports analytics industry. In the mean time, I am a competitive ultimate frisbee player and I am always looking for my next big challenge.</p>
+                                </div>
                             </div>
                         </article>
                     </div>
 
+                    <div class="row interests">
+                        <article>
+                            <br>
+                            <h1 class="subtitles">A little more about me and what I do</h1>
+                            <br>
+                            <div class="col-md-4">
+                                <h2 class="subtitles">Coding</h2>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 class="subtitles">School</h2>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 class="subtitles">Athlete</h2>
+                            </div>
+                        </article>
+                    </div>
 
             </div>
-            The content of my website
         </div>
     </body>
 
