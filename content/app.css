@@ -2,6 +2,10 @@
     pointer-events: none;
 }
 
+.center{
+    text-align: center;
+}
+
 /*useful website: http://css-snippets.com/simple-horizontal-navigation/  */
 
 body {
@@ -147,8 +151,16 @@ Code below will take care of resizing things if screen is big enough*/
 
   .interests {
       background-color: white;
+      /*height:100vh;
+      line above makes the div take all view space*/
   }
 
   .subtitles {
         text-align: center;
+  }
+
+  .summaries {
+      line-height: 2;
+      font-size: 15px;
+      width: 80%;
   }
