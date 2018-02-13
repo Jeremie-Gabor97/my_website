@@ -70,7 +70,7 @@ Code below will take care of resizing things if screen is big enough*/
 .centered {
     position: absolute;
     text-align: center;
-    top: 45%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -102,17 +102,17 @@ Code below will take care of resizing things if screen is big enough*/
     left: 35%;
     top: 100%;
     opacity: 0;
-    animation: load_up 0.75s, 1s load_down 0.60s;
+    animation: load_up 3s, 3s load_down 3s;
 }
 
 @keyframes load_up{
-    from{opacity:1;top:150%}
-    to{opacity:1;top:125%;}
+    from{opacity:1;top:150vh}
+    to{opacity:1;top:28vh;}
 }
 
 @keyframes load_down{
-    from{opacity:1;top:125%}
-    to{opacity:1;top:200%;}
+    from{opacity:1;top:28vh}
+    to{opacity:1;top:150vh;}
 }
 
 .intro-texts{
@@ -163,4 +163,8 @@ Code below will take care of resizing things if screen is big enough*/
       line-height: 2;
       font-size: 15px;
       width: 80%;
+  }
+
+  img.desaturate{
+      filter: grayscale(100%);
   }
