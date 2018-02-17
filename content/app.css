@@ -202,10 +202,22 @@ Code below will take care of resizing things if screen is big enough*/
 
   .text{
       border-color: #fff;
-      border-width: 15px;
+      border-width: 40px;
       color: white;
+      border: solid;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
       font-size: 16px;
+      align:center;
+      vertical-align: center;
       /*padding: 16px 32px;*/
+  }
+
+  .middle {
+    border-color: #fff;
+    border-width: 15px;
   }
 
   /*clear floats after the column*/
@@ -217,4 +229,9 @@ Code below will take care of resizing things if screen is big enough*/
 
   .project-img:hover .middle{
       opacity:1;
+  }
+
+  .middle:hover .image {
+    opacity:0.5;
+    background-color: black;
   }
