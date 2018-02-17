@@ -151,18 +151,21 @@ Code below will take care of resizing things if screen is big enough*/
 
   .interests {
       background-color: white;
-      padding-bottom: 20px;
+      padding-bottom: 16px;
+      height: 600px;
       /*height:100vh;
       line above makes the div take all view space*/
   }
 
   .subtitles {
         text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
   }
 
   .summaries {
       line-height: 2;
-      font-size: 15px;
+      font-size: 20px;
       width: 80%;
   }
 
@@ -171,7 +174,7 @@ Code below will take care of resizing things if screen is big enough*/
   }
 
   img.desaturate{
-      filter: grayscale(100%);/* if want to filter out image to grayscale*/
+      /*filter: grayscale(150%);/* if want to filter out image to grayscale*/
     
   }
 
@@ -207,10 +210,10 @@ Code below will take care of resizing things if screen is big enough*/
       border: solid;
       padding-left: 16px;
       padding-right: 16px;
-      padding-top: 8px;
-      padding-bottom: 8px;
+      padding-top: 3px;
+      padding-bottom: 3px;
       font-size: 16px;
-      align:center;
+      align: center;
       vertical-align: center;
       /*padding: 16px 32px;*/
   }
@@ -222,9 +225,10 @@ Code below will take care of resizing things if screen is big enough*/
 
   /*clear floats after the column*/
   .project-img:hover .image{
-      transition: 0.7s ease;
+    transition: 0.7s ease;
     opacity:0.5;
     background-color: black;
+    filter: grayscale(150%);
 }
 
   .project-img:hover .middle{
@@ -232,6 +236,14 @@ Code below will take care of resizing things if screen is big enough*/
   }
 
   .middle:hover .image {
-    opacity:0.5;
+    opacity:0.01;
     background-color: black;
+    filter: grayscale(150%);
+  }
+
+  .proj-title{
+      color: white;
+      font-weight: bold;
+      font-size: 22px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
