@@ -217,6 +217,10 @@ Code below will take care of resizing things if screen is big enough*/
       /*padding: 16px 32px;*/
   }
 
+  div.link:hover{
+      cursor: hand;
+  }
+
   .middle {
     border-color: #fff;
     border-width: 15px;
@@ -251,3 +255,7 @@ Code below will take care of resizing things if screen is big enough*/
       font-size: 22px;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
+
+ div.link:hover{
+    cursor: pointer;
+}
