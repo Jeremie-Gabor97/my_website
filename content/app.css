@@ -171,6 +171,7 @@ Code below will take care of resizing things if screen is big enough*/
 
   .projects{
       padding-bottom: 50px;
+      background-color: rgb(187, 236, 248);
   }
 
   img.desaturate{
@@ -258,4 +259,13 @@ Code below will take care of resizing things if screen is big enough*/
 
  div.link:hover{
     cursor: pointer;
+}
+
+.contact {
+    background-color: rgb(37, 37, 37);
+    color:white;
+}
+
+.footer {
+    background-color: black;
 }
