@@ -269,3 +269,17 @@ Code below will take care of resizing things if screen is big enough*/
 .footer {
     background-color: black;
 }
+
+.link_list{
+    text-align: center;
+}
+
+.link_list li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.white {
+    color: white;
+}
