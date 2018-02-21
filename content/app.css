@@ -283,3 +283,13 @@ Code below will take care of resizing things if screen is big enough*/
 .white {
     color: white;
 }
+
+.brand_links {
+    text-align:center;
+}
+
+.brand_links li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+}
