@@ -7,6 +7,7 @@
 	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" rel="text/javascript" />
         <link href = "content/app.css" rel = "stylesheet"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src = "https://code.jquery.com/jquery-1.10.2.js" type="application/javascript"></script>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
         <script src = "http://code.angularjs.org/1.0.3/angular-sanitize.js"></script>
@@ -20,9 +21,9 @@
             <div class = "nav">
                 <ul>
                     <li class="active"><a name="home" href = "#">Home</a></li>
-                    <li><a href = "#Interests">Interests</a></li>
-                    <li><a href = "#Sports">Sports</a></li>
-                    <li><a href = "#Contact">Contact</a></li>
+                    <li id="interest-button"><a href = "#Interests">Interests</a></li>
+                    <li id="sports-button"><a href = "#Sports">Sports</a></li>
+                    <li id="contact-button"><a href = "#contact">Contact</a></li>
                     <! # specifies internal location>
                 </ul>
             </div>
@@ -93,53 +94,60 @@
                         </article>
                     </div>
 
-                    <div class="row projects">
+                    <div class="container-fluid projects row">
                         <article>
-                            <br>
-                            <h1 align="center">My latest hacks and projects</h1>
-                            <br>
-                            <br>
-                            <div align="center" class="col-md-4 project-img">
+                            <div class="row">
+                                <br>
+                                <h1 align="center">My latest hacks and projects</h1>
+                                <br>
+                                <br>
+                                <div align="center" class="col-md-4 project-img">
+                                        <div class="wrapper">
+                                        <img src="images and videos/sports_stats.png" class="image desaturate" height="350" width="370"/>
+                                        <div class="middle">
+                                            <div class="proj-title">Stats Recording App</div>
+                                            <br>
+                                            <div onclick="window.open('https://github.com/Jeremie-Gabor97/uncommon_hacks_2018');" class="text link">GitHub</div>
+                                            <br>
+                                            <div onclick="window.open('https://devpost.com/software/text-me-by-the-hoops');" class="text link">Dev Post</div>
+                                        </div>
+                                        </div>
+                                </div>
+                                <div align="center" class="col-md-4 project-img">
                                     <div class="wrapper">
-                                    <img src="images and videos/sports_stats.png" class="image desaturate" height="350" width="370"/>
-                                    <div class="middle">
-                                        <div class="proj-title">Stats Recording App</div>
-                                        <br>
-                                        <div onclick="window.open('https://github.com/Jeremie-Gabor97/uncommon_hacks_2018');" class="text link">GitHub</div>
-                                        <br>
-                                        <div onclick="window.open('https://devpost.com/software/text-me-by-the-hoops');" class="text link">Dev Post</div>
-                                    </div>
-                                    </div>
-                            </div>
-                            <div align="center" class="col-md-4 project-img">
-                                <div class="wrapper">
-                                    <img src="images and videos/tetris.png" class="image desaturate" height="350" width="370"/>
-                                    <div class="middle">
-                                        <div class="proj-title">Tetris</div>
-                                        <br>
-                                        <div onclick="window.open('https://github.com/paolo-torres/Toast-the-North');" class="text link">More info</div>
+                                        <img src="images and videos/tetris.png" class="image desaturate" height="350" width="370"/>
+                                        <div class="middle">
+                                            <div class="proj-title">Tetris</div>
+                                            <br>
+                                            <div onclick="window.open('https://github.com/paolo-torres/Toast-the-North');" class="text link">More info</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div align="center" class="col-md-4 project-img">
-                                <div class="wrapper">
-                                    <img src="images and videos/toaster.jpg" class="image desaturate" height="350" width="370"/>
-                                <div class="middle">
-                                        <div class="proj-title">Toast the North</div>
-                                        <br>
-                                        <div onclick="window.open('https://github.com/paolo-torres/Toast-the-North');" class="text link">GitHub</div>
-                                        <br>
-                                        <div onclick="window.open('https://devpost.com/software/toast-the-north');" class="text link">Dev Post</div>
-                                </div>
+                                <div align="center" class="col-md-4 project-img">
+                                    <div class="wrapper">
+                                        <img src="images and videos/toaster.jpg" class="image desaturate" height="350" width="370"/>
+                                    <div class="middle">
+                                            <div class="proj-title">Toast the North</div>
+                                            <br>
+                                            <div onclick="window.open('https://github.com/paolo-torres/Toast-the-North');" class="text link">GitHub</div>
+                                            <br>
+                                            <div onclick="window.open('https://devpost.com/software/toast-the-north');" class="text link">Dev Post</div>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                             <br>
-                            <br>   
+                            <br>
+                            <div class="row" align="center">
+                                <div onclick="window.open('https://github.com/paolo-torres/Toast-the-North');" class=" more-projects text link">See more cool projects</div>
+                            </div>
                         </article>
+                        
                     </div>
 
-                    <div class = "row contact">
+                    <div class = "container-fluid row contact">
                         <article>
+                            <a name="contact"></a>
                             <br>
                             <h2 class="white" align="center">Want to contact me about litteraly anything, do it</h2>
                             <br>
@@ -148,18 +156,21 @@
                                 <li>Projects</li>
                                 <li>About</li>
                                 <li>Resume</li>
-                                <li>GitHUb</li>
+                                <li><a style="color: #ffffff;" href="https://github.com/Jeremie-Gabor97">GitHub</a></li>
                             </ul>
-
+                            <br>
+                            <br>    
                             <ul class="brand_links">
-                                <li class="fa fa-facebook"></li>
-                                <li class="fa fa-linkedin"></li>
+                                <li class="white"><a href = "https://www.facebook.com/jeremie.gabor"><i class="fa fa-facebook"></i></a></li>
+                                <li class="white"><a href="mailto:jeremie.gabor@gmail.com"><i class="material-icons">&#xe0be;</i></a></li>
+                                <li class="white"><a href = "https://www.linkedin.com/in/jeremie-gabor/"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
+                            <br>
+                            <br>
                             <!Home Projects About Resume GitHub>
-                            <footer class="container-fluid footer">
-                                Copyright 2018
+                            <footer class="container-fluid footer row">
+                                    Copyright 2018 {{ timestamp }}
                                 <! this an angular js function>
-                                <p>{{ timestamp }}</p>
                             </footer>
                         </article>
                     </div>

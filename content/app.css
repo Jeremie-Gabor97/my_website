@@ -280,7 +280,7 @@ Code below will take care of resizing things if screen is big enough*/
     font-size: 15px;
 }
 
-.white {
+.white i {
     color: white;
 }
 
@@ -292,4 +292,18 @@ Code below will take care of resizing things if screen is big enough*/
     display: inline-block;
     padding: 10px;
     font-size: 25px;
+}
+
+.email {
+    bottom: 0;
+}
+
+.more-projects {
+    color:black;
+    border-color: black;
+    text-align: center;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: inline-block;
 }
