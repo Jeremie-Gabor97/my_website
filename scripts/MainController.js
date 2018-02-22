@@ -5,6 +5,18 @@ app.controller('MainController',['$scope',function($scope,$http,$window){
     }];
 }]);
 
-    $.("#contact-button").click(function(){
-        scrollTo()
+    $document.getElementById("contact-button").addEventListener('click',function(){
+        scrollTo("#contact")
+    })
+
+    $document.getElementById("sports-button").addEventListener('click',function(){
+        scrollTo("#sports")
+    })
+
+    $document.getElementById("interest-button").addEventListener('click',function(){
+        scrollTo("#interests")
+    })
+
+    $document.getElementById("project-button").addEventListener('click',function(){
+        scrollTo("#projects")
     })
