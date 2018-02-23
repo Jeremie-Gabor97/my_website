@@ -1,4 +1,81 @@
-<form method="GET" action="mailto:jeremie.gabor@gmail.com" enctype="text/plain">
-    <br/>
-    <input type="submit" value="Send" />
-</form>
+<!doctype html>
+<html>
+    <head>
+        <title>Jeremie Gabor - projects</title> <! this it the name of the tag on top of screen, over search bar>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" rel="text/javascript" />
+        <link href = "content/app.css" rel = "stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src = "https://code.jquery.com/jquery-1.10.2.js" type="application/javascript"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+        <script src = "http://code.angularjs.org/1.0.3/angular-sanitize.js"></script>
+        <script src="scripts/app.js" type="application/javascript"></script>
+        <script src="scripts/MainController.js" type="application/javascript"></script>
+    </head>
+
+
+    <body onload = "onLoad()" ng-app="angularApp">
+        <div ng-controller="MainController">
+            <div align = "center" class="container-fluid row all-projects">
+                <article>
+                    <h1>All my projects!</h1>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <article ng-repeat="article in Articles">
+                            <div class="col-md-3">
+                                <img ng-src="{{ article.Image }}" />
+                            </div>
+                            <div class="col-md-9">
+                                <h2>{{ article.Title }}</h2>
+                                <div ng-bind-html="article.Body"></div>
+                            </div>
+                        </article>
+                    </div>
+                    
+
+
+
+
+                    <br>
+                    <br>
+                    <div align="center" class="col-md-4 project-img">
+                        <div class="wrapper">
+                            <img src="images and videos/sports_stats.png" class="image desaturate" height="350" width="370"/>
+                                <div class="middle">
+                                    <div class="proj-title">Stats Recording App</div>
+                                    <br>
+                                    <div onclick="window.open('https://github.com/Jeremie-Gabor97/uncommon_hacks_2018');" class="text link">GitHub</div>
+                                    <br>
+                                    <div onclick="window.open('https://devpost.com/software/text-me-by-the-hoops');" class="text link">Dev Post</div>
+                                </div>
+                        </div>
+                    </div>
+                    <div align="center" class="col-md-4 project-img">
+                        <div class="wrapper">
+                            <img src="images and videos/tetris.png" class="image desaturate" height="350" width="370"/>
+                            <div class="middle">
+                                    <div class="proj-title">Tetris</div>
+                                    <br>
+                                    <div onclick="window.open('https://github.com/paolo-torres/Toast-the-North');" class="text link">More info</div>
+                                </div>
+                        </div>
+                    </div>
+                    <div align="center" class="col-md-4 project-img">
+                        <div class="wrapper">
+                            <img src="images and videos/toaster.jpg" class="image desaturate" height="350" width="370"/>
+                                <div class="middle">
+                                    <div class="proj-title">Toast the North</div>
+                                    <br>
+                                    <div onclick="window.open('https://github.com/paolo-torres/Toast-the-North');" class="text link">GitHub</div>
+                                    <br>
+                                    <div onclick="window.open('https://devpost.com/software/toast-the-north');" class="text link">Dev Post</div>
+                                </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </body>
+</html>

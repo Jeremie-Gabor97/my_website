@@ -307,3 +307,20 @@ Code below will take care of resizing things if screen is big enough*/
     padding-top: 15px;
     display: inline-block;
 }
+
+.more-projects a:hover{
+    text-decoration: none;
+}
+
+.sports {
+    background-color: #f8f1f1;
+}
+
+.all-projects {
+    height: 100vh;
+    background-color: rgb(225, 225, 245);
+}
+
+html, body {
+    overflow-x: hidden;
+  }
