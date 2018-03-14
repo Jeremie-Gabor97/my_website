@@ -324,3 +324,19 @@ Code below will take care of resizing things if screen is big enough*/
 html, body {
     overflow-x: hidden;
   }
+
+  .sports_description {
+      position: absolute;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+  }
+
+  .img_wrap:hover .sports_description{
+        visibility: visible;
+        opacity: 1;
+  }
+
+  .img__wrap {
+    position: relative;
+  }
